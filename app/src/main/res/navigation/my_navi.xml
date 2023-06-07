@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navi"
+    app:startDestination="@id/conditionalEntryFragment">
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.restaurant_search.SearchResultsFragment"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_search_results" >
+        <argument
+            android:name="range"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_searchResultsFragment_to_storeDetailsFragment"
+            app:destination="@id/storeDetailsFragment" />
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+        <argument android:name="primaryGenre"
+            app:argType="string" />
+        <argument
+            android:name="subGenre"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeDetailsFragment"
+        android:name="com.example.restaurant_search.StoreDetailsFragment"
+        android:label="fragment_store_details"
+        tools:layout="@layout/fragment_store_details" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="open"
+            app:argType="string" />
+        <argument
+            android:name="photo"
+            app:argType="string" />
+        <argument
+            android:name="logoimage"
+            app:argType="string" />
+        <argument
+            android:name="genre"
+            app:argType="string" />
+        <argument
+            android:name="subGenre"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/conditionalEntryFragment"
+        android:name="com.example.restaurant_search.ConditionalEntryFragment"
+        android:label="fragment_conditional_entry"
+        tools:layout="@layout/fragment_conditional_entry" >
+        <action
+            android:id="@+id/action_conditionalEntryFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+</navigation>

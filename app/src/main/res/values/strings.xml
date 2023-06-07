@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Restaurant_Search</string>
+    <string name="radius_text">現在地からの距離</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="検索">検索</string>
+    <string name="shop_name">TextView</string>
+    <string name="open_title">営業時間</string>
+    <string name="open">TextView</string>
+    <string name="image_title">写真</string>
+    <string name="logo_image">TODO</string>
+    <string name="food_image">TODO</string>
+    <string name="address_title">住所</string>
+    <string name="adress">TextView</string>
+    <string name="genre_title">ジャンル</string>
+    <string name="sub_genre">TextView</string>
+</resources>

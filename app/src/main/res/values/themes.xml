@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Restaurant_Search" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">#40C4FF</item>
+    </style>
+
+    <style name="Theme.Restaurant_Search" parent="Base.Theme.Restaurant_Search" />
+</resources>
